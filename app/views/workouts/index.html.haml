@@ -1,7 +1,7 @@
 %h1 All Workouts
 -@workouts.each do |workout|
- = workout.date
- = workout.workout
- = workout.mood
- = workout.length
+ %p= link_to workout.date, workout
+ // %p= workout.workout
+ // %p= workout.mood
+ // %p= workout.length
  
