@@ -15,3 +15,56 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+body{
+
+
+background: #00bf8f; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #00bf8f , #001510); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #00bf8f , #001510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color:  #dff0d8;
+}
+
+nav.navbar.navbar-default {
+    height:35px;
+    color: #dff0d8 ;
+}
+
+#index_style {
+    h2{
+    font-weight: 100;
+    margin-bottom:  0;
+    color: white;
+    margin: 10px;
+    }
+    
+    a{
+    color: white;
+    }
+    
+    p{
+        margin: 0;
+    }
+}
+
+#workout_show_style{
+    color: #dff0d8;
+    h2, h1, h3{
+      font-family: inherit;
+    font-weight: 100;
+    line-height: 1.0;
+    color: inherit;  
+    }
+    
+    
+    p {
+        color:#dff0d8;
+    }
+    label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+}

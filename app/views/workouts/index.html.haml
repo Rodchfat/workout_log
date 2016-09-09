@@ -1,7 +1,8 @@
-%h1 All Workouts
--@workouts.each do |workout|
- %p= link_to workout.date, workout
- // %p= workout.workout
- // %p= workout.mood
- // %p= workout.length
+#index_style
+ %h2 All Workouts
+ -@workouts.each do |workout|
+  %p= link_to workout.date.strftime("%A %B %d"), workout
+  %pworkout=workout.workout
+  %hr
+  
  

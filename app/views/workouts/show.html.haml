@@ -1,14 +1,15 @@
-%h2 Workout 
-%p= @workout.date
-%p= @workout.workout
-%p= @workout.mood
-%p= @workout.length
-
-=render 'exercises/exercise'
-// =render @workout.exercises
-
-%h3 Add Exercise
-= render 'exercises/form'
-= link_to "Back", workouts_path 
-= link_to "Edit", edit_workout_path(@workout)
-= link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure"}
+#workout_show_style
+    %h2 Workout 
+    %p= @workout.date
+    %p= @workout.workout
+    %p= @workout.mood
+    %p= @workout.length
+    
+    =render 'exercises/exercise'
+    // =render @workout.exercises
+    
+    %h3 Add Exercise
+    = render 'exercises/form'
+    = link_to "Back", workouts_path 
+    = link_to "Edit", edit_workout_path(@workout)
+    = link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure"}
