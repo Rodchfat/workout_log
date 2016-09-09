@@ -2,7 +2,9 @@
  %h2 All Workouts
  -@workouts.each do |workout|
   %p= link_to workout.date.strftime("%A %B %d"), workout
-  %pworkout=workout.workout
+  %h3
+   %span workout:
+   =workout.workout
   %hr
   
  
